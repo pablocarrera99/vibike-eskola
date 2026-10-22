@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pablocarrera99.github.io/vibike-eskola/sitemap.xml
