@@ -1,0 +1,28 @@
+{
+  "noticias": [
+    {
+      "date": "Próximamente",
+      "category": "VITRI",
+      "title": "La actualidad de VITRI, siempre en portada",
+      "summary": "Cuando publiquemos la primera crónica, esta tarjeta se sustituirá automáticamente por la noticia más reciente.",
+      "image": "",
+      "url": ""
+    },
+    {
+      "date": "Temporada 2026-27",
+      "category": "Outdoor Eskola",
+      "title": "Actividades, entrenamientos y vida de club",
+      "summary": "Este espacio mostrará noticias de la escuela, salidas, convivencias y actividades especiales.",
+      "image": "",
+      "url": ""
+    },
+    {
+      "date": "Temporada 2026-27",
+      "category": "Competición",
+      "title": "Resultados y crónicas del fin de semana",
+      "summary": "Aquí iremos publicando fotos, resultados y un pequeño resumen de las competiciones de nuestros deportistas.",
+      "image": "",
+      "url": ""
+    }
+  ]
+}
