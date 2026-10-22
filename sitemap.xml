@@ -84,4 +84,16 @@
     <xhtml:link rel="alternate" hreflang="eu" href="https://pablocarrera99.github.io/vibike-eskola/eu/contacto.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocarrera99.github.io/vibike-eskola/contacto.html" />
   </url>
+  <url>
+    <loc>https://pablocarrera99.github.io/vibike-eskola/patrocinadores.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocarrera99.github.io/vibike-eskola/patrocinadores.html" />
+    <xhtml:link rel="alternate" hreflang="eu" href="https://pablocarrera99.github.io/vibike-eskola/eu/patrocinadores.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocarrera99.github.io/vibike-eskola/patrocinadores.html" />
+  </url>
+  <url>
+    <loc>https://pablocarrera99.github.io/vibike-eskola/eu/patrocinadores.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://pablocarrera99.github.io/vibike-eskola/patrocinadores.html" />
+    <xhtml:link rel="alternate" hreflang="eu" href="https://pablocarrera99.github.io/vibike-eskola/eu/patrocinadores.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pablocarrera99.github.io/vibike-eskola/patrocinadores.html" />
+  </url>
 </urlset>
