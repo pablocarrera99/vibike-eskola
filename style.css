@@ -437,3 +437,69 @@ body{overflow-x:hidden}
  html{scroll-behavior:auto}
  .button,.sponsor-grid a,.footer-sponsors a{transition:none}
 }
+
+
+/* Destacar a quienes apoyan VITRI */
+.sponsor-ribbon{display:grid;grid-template-columns:200px minmax(0,1fr) auto;align-items:center;gap:23px;padding:25px 6vw;background:#fff;border-bottom:1px solid var(--line)}
+.sponsor-ribbon-heading .eyebrow{font-size:9px;margin-bottom:4px}
+.sponsor-ribbon-heading h2{font-size:29px;line-height:1.02;color:var(--dark)}
+.sponsor-ribbon-logos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;align-items:center}
+.sponsor-ribbon-logos a{min-width:0;height:65px;display:grid;place-items:center;padding:8px;border:1px solid var(--line);background:#fff;border-radius:8px;transition:transform .2s,box-shadow .2s}
+.sponsor-ribbon-logos img{width:100%;max-height:47px;object-fit:contain}
+.sponsor-ribbon-logos a:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(33,16,44,.1)}
+.sponsor-ribbon-cta{font-size:11px;line-height:1.5;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--purple);max-width:150px}
+.sponsor-ribbon-cta:hover,.footer-sponsor-heading a:hover{color:var(--orange)}
+.sponsors-page-intro{max-width:730px;margin-bottom:42px}
+.sponsors-page-intro h2{font-size:clamp(44px,5vw,67px);line-height:1;color:var(--dark)}
+.sponsors-page-intro>p:last-child{font-size:16px;color:var(--muted);line-height:1.75}
+.sponsor-directory{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.sponsor-profile{display:grid;grid-template-columns:minmax(145px,37%) minmax(0,1fr);min-height:246px;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.sponsor-profile-brand{position:relative;display:flex;align-items:center;justify-content:center;padding:30px 17px;background:#fff;border-right:1px solid var(--line)}
+.sponsor-profile-number{position:absolute;left:17px;top:15px;font-size:10px;font-weight:800;letter-spacing:.13em;color:#a29ba3}
+.sponsor-profile-logo{width:100%;min-height:145px;display:flex;align-items:center;justify-content:center}
+.sponsor-profile-logo img{width:100%;max-width:200px;max-height:120px;object-fit:contain}
+.sponsor-profile-content{display:flex;flex-direction:column;align-items:flex-start;padding:26px 22px}
+.sponsor-profile-category{color:var(--purple);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:0 0 14px}
+.sponsor-profile-content h2{font-size:clamp(30px,3.1vw,44px);line-height:1;color:var(--dark)}
+.sponsor-profile-content>p:not(.sponsor-profile-category){font-size:13px;line-height:1.7;color:#665e6b;margin:14px 0 20px}
+.sponsor-profile-link{margin-top:auto;min-height:38px;display:inline-flex;align-items:center;gap:6px;color:var(--purple);font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.sponsor-profile-link:hover{color:var(--orange)}
+.sponsor-collaboration{padding:70px 8vw;display:flex;align-items:center;justify-content:space-between;gap:40px;background:var(--dark);color:#fff}
+.sponsor-collaboration h2{font-size:clamp(42px,5vw,66px);max-width:730px}
+.sponsor-collaboration p:last-child{max-width:660px;font-size:15px;color:#d6c8dd}
+.sponsor-collaboration .button{min-height:50px;white-space:nowrap}
+.footer-sponsor-heading a{color:var(--orange)}
+@media(max-width:1350px){
+ .desktop-nav{font-size:10px;gap:clamp(9px,1vw,15px);letter-spacing:.045em}
+ .sponsor-ribbon{grid-template-columns:190px minmax(0,1fr)}
+ .sponsor-ribbon-cta{grid-column:2;max-width:none}
+}
+@media(max-width:1050px){
+ .sponsor-ribbon{grid-template-columns:1fr;gap:15px;padding:25px 7vw}
+ .sponsor-ribbon-heading h2{font-size:32px}
+ .sponsor-ribbon-cta{grid-column:1;min-height:35px;display:inline-flex;align-items:center}
+ .sponsor-directory{grid-template-columns:1fr}
+ .sponsor-profile{grid-template-columns:minmax(150px,32%) minmax(0,1fr)}
+}
+@media(max-width:680px){
+ .sponsor-ribbon{padding:22px 6vw;gap:12px}
+ .sponsor-ribbon-logos{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+ .sponsor-ribbon-logos a{height:60px;padding:8px}
+ .sponsor-ribbon-logos img{max-height:43px}
+ .sponsor-ribbon-heading h2{font-size:29px}
+ .sponsors-page-intro{margin-bottom:25px}
+ .sponsors-page-intro h2{font-size:42px}
+ .sponsors-page-intro>p:last-child{font-size:14px}
+ .sponsor-directory{gap:15px}
+ .sponsor-profile{display:block}
+ .sponsor-profile-brand{min-height:155px;padding:27px 20px 15px;border-right:0;border-bottom:1px solid var(--line)}
+ .sponsor-profile-logo{min-height:112px}
+ .sponsor-profile-logo img{max-width:220px;max-height:102px}
+ .sponsor-profile-content{padding:23px}
+ .sponsor-profile-content h2{font-size:35px}
+ .sponsor-profile-link{min-height:44px;font-size:12px}
+ .sponsor-collaboration{padding:46px 6vw;flex-direction:column;align-items:flex-start;gap:18px}
+ .sponsor-collaboration h2{font-size:45px}
+ .sponsor-collaboration .button{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.sponsor-ribbon-logos a{transition:none}}
