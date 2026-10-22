@@ -77,6 +77,13 @@
     const slug=new URLSearchParams(location.search).get("id");
     const post=all.find(p=>String(p.slug)===slug);
     if(!post){el.innerHTML="<h1>"+tr.unknown+"</h1>";return;}
+    // Conserva la URL individual y sus equivalentes de idioma para cada artículo.
+    const query="?id="+encodeURIComponent(String(slug));
+    const canonical=$('link[rel="canonical"]');
+    if(canonical)canonical.href=location.origin+location.pathname+query;
+    for(const alternate of document.querySelectorAll('link[rel="alternate"][hreflang]')){
+      if(!alternate.href.includes("?id="))alternate.href+=query;
+    }
     const content=value(post,"body").trim()||tr.missing;
     const paragraphs=content.split(/\n\s*\n/g).map(p=>"<p>"+esc(p).replace(/\n/g,"<br>")+"</p>").join("");
     el.innerHTML='<p class="news-meta">'+esc(value(post,"category"))+' · '+esc(dateText(post))+'</p><h1>'+esc(value(post,"title"))+'</h1>'+
