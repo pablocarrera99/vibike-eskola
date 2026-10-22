@@ -237,3 +237,105 @@ footer{padding:45px 5vw 28px;background:#140b19;color:#bcb0bf}
 @media(max-width:370px){
  .sponsor-grid{grid-template-columns:1fr}
 }
+
+
+/* =========================================================
+   VITRI - navegación y diseño responsive ES/EU, octubre 2026
+   ========================================================= */
+:root{--soft:#f2ecf3}
+html{scroll-padding-top:92px}
+body{overflow-x:hidden}
+.site-header{gap:20px;height:86px;min-height:86px;padding:0 clamp(18px,4vw,72px)}
+.site-header .brand{width:90px;height:74px;flex:0 0 90px}
+.site-header .brand img{height:72px;width:90px;object-fit:contain;border-radius:50%}
+.desktop-nav{flex:1;justify-content:center;gap:clamp(11px,1.55vw,25px);font-size:11px}
+.desktop-nav a{white-space:nowrap}
+.desktop-nav a[aria-current="page"]{opacity:1;color:var(--purple)}
+.header-tools{display:flex;gap:20px;align-items:center;flex:0 0 auto}
+.language-switch{display:flex;align-items:center;gap:7px;color:#7c7280;font-size:12px;font-weight:800;letter-spacing:.02em}
+.language-switch a{color:var(--purple);text-decoration:none}
+.language-switch a:hover{text-decoration:underline}
+.language-switch .is-current{color:var(--ink)}
+.language-switch .lang-divider{opacity:.4}
+.skip-link{position:absolute;top:-200px;left:20px;z-index:200;padding:14px;background:#fff;color:var(--purple)}
+.skip-link:focus{top:6px}
+.hero{min-height:590px;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)}
+.hero h1{font-size:clamp(60px,7.8vw,118px);overflow-wrap:normal}
+.hero-logo-wrap{max-width:345px;width:72%;aspect-ratio:1;padding:0;background:#fff;border-radius:50%;overflow:hidden;box-shadow:0 22px 75px rgba(0,0,0,.24)}
+.hero-logo-wrap img{width:100%;height:100%;aspect-ratio:1;object-fit:cover;border-radius:50%}
+.hero-identity{min-height:590px}
+.hero-identity>p{max-width:95%;text-align:center}
+.info-grid a:hover,.section-more:hover,.news-card-link:hover,.footer-links a:hover{color:var(--orange)}
+.section-heading h2{line-height:1}
+.sponsor-grid a{border-radius:9px}
+.sponsor-grid img{object-fit:contain;mix-blend-mode:normal}
+.footer-sponsors a{border-radius:8px}
+
+.interior-page{min-height:65vh}
+.interior-hero{background:linear-gradient(120deg,#21102c,#431755);padding:100px 8vw 90px;color:#fff;position:relative;overflow:hidden}
+.interior-hero:after{content:"";position:absolute;right:-170px;top:-190px;width:480px;height:480px;border:60px solid rgba(255,106,0,.12);border-radius:50%;pointer-events:none}
+.interior-hero h1{position:relative;z-index:1;font-size:clamp(58px,8vw,116px);line-height:.96;max-width:1100px}
+.interior-hero>p:last-child{position:relative;z-index:1;font-size:clamp(15px,1.5vw,19px);color:#e6ddeb;max-width:660px;margin:22px 0 0}
+.interior-hero .eyebrow{position:relative;z-index:1}
+.content-section{padding:80px 8vw 110px}
+.content-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:stretch}
+.content-panel{min-height:245px;padding:40px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--orange);scroll-margin-top:100px}
+.content-index{font-size:11px;font-weight:800;color:var(--purple)}
+.content-panel h2{font-size:clamp(36px,4vw,54px);margin:30px 0 20px}
+.content-panel p{font-size:15px;color:#63596a;line-height:1.75;margin:0}
+.content-panel .text-action{display:inline-block;margin-top:25px;color:var(--purple);font-size:14px;font-weight:800}
+.news-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:25px}
+.search-label{font-family:'Barlow Condensed',Impact,sans-serif;text-transform:uppercase;font-size:28px;font-weight:800}
+#news-search{padding:14px 18px;min-height:48px;max-width:360px;width:100%;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--ink);font:inherit}
+#news-search:focus{outline:3px solid rgba(91,22,142,.22);border-color:var(--purple)}
+.all-news-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.all-news-grid .news-card{display:flex;flex-direction:column}
+.all-news-grid .news-card-copy{flex:1}
+.archive-actions{margin:28px auto 0;text-align:center}
+.archive-actions [hidden]{display:none!important}
+.empty-news{grid-column:1/-1;padding:35px;background:#fff;border:1px solid var(--line)}
+.article-body{max-width:900px;margin:34px auto 0;background:#fff;padding:clamp(24px,5vw,70px);border:1px solid var(--line)}
+.article-body h1{font-size:clamp(40px,6vw,74px);color:var(--dark);margin:14px 0 35px}
+.article-body p{font-size:17px;line-height:1.75;color:#5e5461}
+.article-body .article-summary{font-size:22px;font-weight:600;color:var(--ink)}
+.article-body .featured-news-media{min-height:0;aspect-ratio:16/9;margin-bottom:30px}
+.footer-sponsor-heading{margin:26px 0 0;text-transform:uppercase;font-size:10px;font-weight:800;letter-spacing:.15em;color:var(--orange)}
+.news-card-link{margin-top:20px}
+@media(max-width:1200px){
+ .desktop-nav{gap:12px;font-size:10px}
+ .site-header{padding:0 3vw}
+ .header-tools{gap:10px}
+}
+@media(max-width:1050px){
+ .desktop-nav{display:none}
+ .mobile-menu{display:block}
+ .site-header{height:77px;min-height:77px;padding:0 5vw}
+ .mobile-menu nav{top:43px;width:min(280px,85vw);box-shadow:0 18px 50px rgba(33,16,44,.19);border:1px solid var(--line);border-radius:8px}
+ .mobile-menu nav a[aria-current="page"]{color:var(--purple)}
+ .hero{grid-template-columns:1fr}
+ .hero-copy{padding:80px 7vw}
+ .hero-identity{min-height:400px}
+ .hero-logo-wrap{width:min(275px,65%);max-width:275px}
+ .content-grid,.all-news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:680px){
+ .site-header .brand{width:76px;height:66px;flex-basis:76px}
+ .site-header .brand img{width:76px;height:64px}
+ .language-switch{font-size:11px}
+ .hero h1{font-size:clamp(60px,17vw,96px);line-height:.98}
+ .hero-copy{padding:60px 7vw}
+ .hero-identity{min-height:330px}
+ .hero-logo-wrap{width:235px;max-width:72%}
+ .hero-identity>p{bottom:15px;font-size:8px}
+ .interior-hero{padding:72px 7vw 65px}
+ .interior-hero h1{font-size:clamp(50px,13vw,80px)}
+ .content-section{padding:45px 7vw 80px}
+ .content-grid,.all-news-grid{grid-template-columns:1fr}
+ .content-panel{min-height:0;padding:28px}
+ .content-panel h2{margin:25px 0 16px}
+ .news-toolbar{flex-direction:column;align-items:stretch}
+ #news-search{max-width:none}
+ .article-body{padding:24px}
+ .sponsor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .footer-sponsors{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
