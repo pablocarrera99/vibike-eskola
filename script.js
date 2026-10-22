@@ -14,7 +14,7 @@ function escapeHtml(value=""){
 }
 
 function newsMedia(item, className){
-  const image = item.image ? '<img src="'+escapeHtml(item.image)+'" alt="">' : '';
+  const image = item.image ? '<img src="'+escapeHtml(item.image)+'" alt="'+escapeHtml(item.title || "Noticia VITRI")+'">' : '';
   return '<div class="'+className+(item.image ? '' : ' no-image')+'">'+image+'</div>';
 }
 
@@ -39,6 +39,7 @@ function renderNews(items){
         '<span class="news-meta">'+escapeHtml(item.category)+' · '+escapeHtml(item.date)+'</span>'+
         '<h3>'+escapeHtml(item.title)+'</h3>'+
         '<p>'+escapeHtml(item.summary)+'</p>'+
+        (item.url ? '<a class="news-card-link" href="'+escapeHtml(item.url)+'">Leer noticia →</a>' : '')+
       '</div>'+
     '</article>'
   ).join("");
