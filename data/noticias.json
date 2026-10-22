@@ -1,26 +1,39 @@
 {
+  "_instrucciones": "Añade noticias nuevas AL PRINCIPIO o usa date_iso YYYY-MM-DD. Para artículos completos, añade slug, body_es y body_eu. La portada muestra las cuatro primeras; la hemeroteca permite buscar y cargar más. No publicar información personal ni imágenes de menores sin autorización.",
   "noticias": [
     {
       "date": "Próximamente",
+      "date_eu": "Laster",
       "category": "VITRI",
+      "category_eu": "VITRI",
       "title": "La actualidad de VITRI, siempre en portada",
+      "title_eu": "VITRIren berriak, hasierako orrian",
       "summary": "Cuando publiquemos la primera crónica, esta tarjeta se sustituirá automáticamente por la noticia más reciente.",
+      "summary_eu": "Lehen kronika argitaratzen dugunean, albiste berriena hemen agertuko da.",
       "image": "",
       "url": ""
     },
     {
       "date": "Temporada 2026-27",
+      "date_eu": "2026-27 denboraldia",
       "category": "Outdoor Eskola",
+      "category_eu": "Outdoor Eskola",
       "title": "Actividades, entrenamientos y vida de club",
+      "title_eu": "Jarduerak, entrenamenduak eta klubeko bizitza",
       "summary": "Este espacio mostrará noticias de la escuela, salidas, convivencias y actividades especiales.",
+      "summary_eu": "Hemen eskolako berriak, txangoak, elkarbizitza jarduerak eta ekintza bereziak erakutsiko ditugu.",
       "image": "",
       "url": ""
     },
     {
       "date": "Temporada 2026-27",
+      "date_eu": "2026-27 denboraldia",
       "category": "Competición",
+      "category_eu": "Lehiaketak",
       "title": "Resultados y crónicas del fin de semana",
+      "title_eu": "Asteburuko emaitzak eta kronikak",
       "summary": "Aquí iremos publicando fotos, resultados y un pequeño resumen de las competiciones de nuestros deportistas.",
+      "summary_eu": "Hemen gure kirolarien lehiaketen argazkiak, emaitzak eta laburpenak argitaratuko ditugu.",
       "image": "",
       "url": ""
     }
