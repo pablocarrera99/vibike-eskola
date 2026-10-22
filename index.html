@@ -3,143 +3,209 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="VITRI Gasteiz Outdoor Eskola. Triatlón, deporte base, actividades outdoor y comunidad en Vitoria-Gasteiz.">
+  <meta name="description" content="VITRI Gasteiz Outdoor Eskola. Club de triatlón y escuela deportiva en Vitoria-Gasteiz.">
+  <meta name="theme-color" content="#5B168E">
   <title>VITRI Gasteiz Outdoor Eskola</title>
+  <link rel="icon" href="assets/vitri-outdoor.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <a class="brand" href="#inicio" aria-label="VITRI Gasteiz Outdoor Eskola - Inicio">
-    <span class="brand-symbol">V</span>
-    <span class="brand-copy"><strong>VITRI GASTEIZ</strong><small>OUTDOOR ESKOLA</small></span>
+    <img src="assets/vitri-outdoor.png" alt="VITRI Gasteiz Outdoor Eskola">
   </a>
-  <nav aria-label="Navegación principal">
+
+  <nav class="desktop-nav" aria-label="Navegación principal">
     <a href="#noticias">Noticias</a>
     <a href="#club">Club</a>
-    <a href="#eskola">Eskola</a>
+    <a href="#eskola">Outdoor Eskola</a>
     <a href="#horarios">Horarios</a>
     <a href="#patrocinadores">Patrocinadores</a>
     <a class="nav-cta" href="#contacto">Contacto</a>
   </nav>
+
+  <details class="mobile-menu">
+    <summary aria-label="Abrir menú">Menú</summary>
+    <nav>
+      <a href="#noticias">Noticias</a>
+      <a href="#club">Club</a>
+      <a href="#eskola">Outdoor Eskola</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#patrocinadores">Patrocinadores</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </details>
 </header>
 
 <main id="inicio">
-<section class="hero">
-  <div class="hero-brand">
-    <p class="eyebrow orange">Vitoria-Gasteiz · Triatlón · Outdoor</p>
-    <h1>VITRI<br><span>Gasteiz.</span></h1>
-    <p class="lead">Outdoor Eskola. Un proyecto para entrenar, aprender, competir y crecer alrededor del deporte.</p>
-    <div class="hero-tags"><span>SWIM</span><span>BIKE</span><span>RUN</span><span>OUTDOOR</span></div>
-  </div>
-
-  <article class="featured-news" id="noticias">
-    <div class="photo-placeholder">
-      <span>FOTO DESTACADA</span>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow orange">Vitoria-Gasteiz · Triatlón · Outdoor</p>
+      <h1>Deporte para<br><em>crecer.</em></h1>
+      <p class="hero-lead">Triatlón, formación y experiencias outdoor para aprender, entrenar, competir y disfrutar en comunidad.</p>
+      <div class="hero-actions">
+        <a class="button orange-button" href="#eskola">Conoce la Eskola</a>
+        <a class="text-link light-link" href="#noticias">Últimas noticias →</a>
+      </div>
+      <div class="sport-tags"><span>SWIM</span><span>BIKE</span><span>RUN</span><span>OUTDOOR</span></div>
     </div>
-    <div class="featured-copy">
-      <p class="eyebrow">Última noticia</p>
-      <p class="date">Próximamente</p>
-      <h2>La actualidad de VITRI, siempre arriba.</h2>
-      <p>Aquí aparecerá cada semana el resumen de competiciones, entrenamientos, actividades y novedades del club.</p>
-      <a href="#noticias-listado">Ver noticias →</a>
+
+    <div class="hero-identity">
+      <div class="hero-logo-wrap">
+        <img src="assets/vitri-outdoor.png" alt="VITRI Gasteiz Outdoor Eskola">
+      </div>
+      <p>VITRI GASTEIZ TRIATLOI KLUBA</p>
     </div>
-  </article>
-</section>
+  </section>
 
-<section class="news-section" id="noticias-listado">
-  <div class="section-title">
-    <div><p class="eyebrow purple">Actualidad</p><h2>Últimas noticias</h2></div>
-    <p>La portada irá cambiando con lo más reciente del club.</p>
-  </div>
-  <div class="news-grid">
-    <article class="news-card">
-      <div class="card-photo"><span>FOTO</span></div>
-      <div><small>Competición</small><h3>Resumen del fin de semana</h3><p>Resultados, protagonistas, fotos y sensaciones de nuestros deportistas.</p></div>
-    </article>
-    <article class="news-card">
-      <div class="card-photo"><span>FOTO</span></div>
-      <div><small>Outdoor Eskola</small><h3>Actividad del club</h3><p>Salidas, jornadas especiales, convivencias y propuestas fuera del entrenamiento habitual.</p></div>
-    </article>
-    <article class="news-card">
-      <div class="card-photo"><span>FOTO</span></div>
-      <div><small>Club</small><h3>Novedades VITRI</h3><p>Información importante para familias, deportistas y comunidad del club.</p></div>
-    </article>
-  </div>
-</section>
+  <section class="latest" id="noticias">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow purple">Actualidad</p>
+        <h2>Últimas noticias</h2>
+      </div>
+      <p>Competiciones, entrenamientos, actividades y novedades del club. La noticia más reciente siempre aparecerá primero.</p>
+    </div>
 
-<section class="club-section" id="club">
-  <div class="section-title light">
-    <div><p class="eyebrow orange">El club</p><h2>VITRI Gasteiz</h2></div>
-    <p>La historia, la filosofía y las personas que dan forma al proyecto.</p>
-  </div>
-  <div class="club-grid">
-    <article><span>01</span><h3>Quiénes somos</h3><p>Presentación del club, valores, proyecto educativo y forma de entender el deporte.</p></article>
-    <article><span>02</span><h3>Nuestra historia</h3><p>Origen del proyecto y evolución hasta VITRI Gasteiz Outdoor Eskola.</p></article>
-    <article><span>03</span><h3>Equipo técnico</h3><p>Entrenadores, responsables y personas que acompañan a nuestros deportistas.</p></article>
-  </div>
-</section>
+    <div id="featured-news" class="featured-news" aria-live="polite"></div>
+    <div id="news-grid" class="news-grid"></div>
+  </section>
 
-<section class="eskola-section" id="eskola">
-  <div class="section-title">
-    <div><p class="eyebrow purple">Outdoor Eskola</p><h2>Aprender haciendo.</h2></div>
-    <p>Triatlón como eje y una mirada abierta al deporte, la naturaleza y la autonomía.</p>
-  </div>
-  <div class="discipline-grid">
-    <article><strong>NADAR</strong><p>Técnica, confianza y autonomía en el agua.</p></article>
-    <article><strong>PEDALEAR</strong><p>Habilidad, seguridad y disfrute sobre la bicicleta.</p></article>
-    <article><strong>CORRER</strong><p>Movimiento, resistencia, técnica y juego.</p></article>
-    <article><strong>OUTDOOR</strong><p>Montaña, naturaleza, orientación, nieve y nuevas experiencias.</p></article>
-  </div>
-</section>
+  <section class="club-section" id="club">
+    <div class="section-heading light">
+      <div>
+        <p class="eyebrow orange">VITRI Gasteiz</p>
+        <h2>Un club con identidad propia.</h2>
+      </div>
+      <p>Deporte base, formación, competición y comunidad en Vitoria-Gasteiz.</p>
+    </div>
 
-<section class="schedule-section" id="horarios">
-  <div class="section-title light">
-    <div><p class="eyebrow orange">Entrenamientos</p><h2>Grupos y horarios</h2></div>
-    <p>Aquí mostraremos de forma sencilla dónde y cuándo entrena cada grupo.</p>
-  </div>
-  <div class="schedule-placeholder">
-    <span>HORARIOS 2026-27</span>
-    <p>Se añadirá la tabla definitiva de grupos, días, instalaciones y entrenadores.</p>
-  </div>
-</section>
+    <div class="info-grid">
+      <article>
+        <span>01</span>
+        <h3>Quiénes somos</h3>
+        <p>El proyecto, los valores y la forma de entender el deporte en VITRI.</p>
+        <a href="#contacto">Conócenos →</a>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Nuestra historia</h3>
+        <p>Del origen de la escuela a la creación de VITRI Gasteiz Triatloi Kluba.</p>
+        <a href="#contacto">Leer más →</a>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Equipo técnico</h3>
+        <p>Entrenadores y responsables que acompañan a cada grupo y deportista.</p>
+        <a href="#contacto">Equipo →</a>
+      </article>
+    </div>
+  </section>
 
-<section class="sponsors-section" id="patrocinadores">
-  <div class="section-title">
-    <div><p class="eyebrow purple">Nos acompañan</p><h2>Patrocinadores</h2></div>
-    <p>Entidades y profesionales que ayudan a hacer crecer el proyecto.</p>
-  </div>
-  <div class="sponsor-grid">
-    <div class="sponsor-logo">Leire Plazaola</div>
-    <div class="sponsor-logo">ViBike</div>
-    <div class="sponsor-logo">OPEBASK</div>
-    <div class="sponsor-logo">Ecoisola</div>
-    <div class="sponsor-logo">Eskuekin</div>
-  </div>
-</section>
+  <section class="eskola-section" id="eskola">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow purple">Outdoor Eskola</p>
+        <h2>Más que triatlón.</h2>
+      </div>
+      <p>El triatlón es el eje. La naturaleza, la autonomía y nuevas experiencias completan la formación.</p>
+    </div>
 
-<section class="contact-section" id="contacto">
-  <div>
-    <p class="eyebrow">¿Quieres saber más?</p>
-    <h2>Hablemos.</h2>
-    <p>Entrenamientos, escuela, actividades, colaboración o cualquier duda sobre VITRI.</p>
-  </div>
-  <div class="contact-links">
-    <a class="contact-main" href="mailto:vitrigasteiz@gmail.com">vitrigasteiz@gmail.com ↗</a>
-    <span>Instagram · próximamente</span>
-    <span>Teléfono · pendiente</span>
-  </div>
-</section>
+    <div class="discipline-grid">
+      <article><span>01</span><strong>Nadar</strong><p>Técnica, confianza y autonomía en el agua.</p></article>
+      <article><span>02</span><strong>Pedalear</strong><p>Habilidad, seguridad y disfrute sobre la bicicleta.</p></article>
+      <article><span>03</span><strong>Correr</strong><p>Técnica, resistencia, movimiento y juego.</p></article>
+      <article><span>04</span><strong>Outdoor</strong><p>Montaña, orientación, nieve, naturaleza y convivencia.</p></article>
+    </div>
+  </section>
+
+  <section class="schedule-section" id="horarios">
+    <div class="section-heading light">
+      <div>
+        <p class="eyebrow orange">Entrenamientos</p>
+        <h2>Grupos y horarios</h2>
+      </div>
+      <p>Información clara para familias y deportistas: grupos, días, instalaciones y sesiones.</p>
+    </div>
+
+    <div class="schedule-card">
+      <div>
+        <span class="schedule-label">Temporada 2026-27</span>
+        <h3>Horarios de entrenamiento</h3>
+        <p>Estamos preparando aquí la tabla definitiva de grupos y horarios.</p>
+      </div>
+      <a class="button outline-button" href="mailto:vitrigasteiz@gmail.com?subject=Información%20entrenamientos%20VITRI">Pedir información</a>
+    </div>
+  </section>
+
+  <section class="sponsors-section" id="patrocinadores">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow purple">Nos acompañan</p>
+        <h2>Patrocinadores</h2>
+      </div>
+      <p>Entidades y profesionales que apoyan el crecimiento de VITRI y su proyecto deportivo.</p>
+    </div>
+
+    <div class="sponsor-grid">
+      <a href="https://leireplazaolanutricion.com/" target="_blank" rel="noopener" aria-label="Leire Plazaola Nutrición">
+        <img src="assets/patrocinadores/leire-plazaola.jpg" alt="Leire Plazaola Nutrición">
+      </a>
+      <a href="https://www.vibike.com/" target="_blank" rel="noopener" aria-label="ViBike">
+        <img src="assets/patrocinadores/vibike.jpg" alt="ViBike">
+      </a>
+      <a href="https://www.opebask.com/" target="_blank" rel="noopener" aria-label="OPEBASK">
+        <img src="assets/patrocinadores/opebask.jpg" alt="OPEBASK">
+      </a>
+      <a href="https://www.ecoisola.es/" target="_blank" rel="noopener" aria-label="Ecoisola">
+        <img src="assets/patrocinadores/ecoisola.png" alt="Ecoisola">
+      </a>
+      <a href="https://www.eskuekin.com/" target="_blank" rel="noopener" aria-label="Eskuekin">
+        <img src="assets/patrocinadores/eskuekin.png" alt="Eskuekin">
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h2>¿Hablamos?</h2>
+      <p>Entrenamientos, escuela, actividades, colaboración o cualquier duda sobre VITRI.</p>
+    </div>
+    <div class="contact-card">
+      <a class="contact-email" href="mailto:vitrigasteiz@gmail.com">vitrigasteiz@gmail.com</a>
+      <p>Instagram y teléfono se añadirán cuando estén definidos.</p>
+      <a class="button purple-button" href="mailto:vitrigasteiz@gmail.com">Escríbenos</a>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="footer-brand">
-    <strong>VITRI GASTEIZ</strong>
-    <span>OUTDOOR ESKOLA</span>
+  <div class="footer-top">
+    <img class="footer-logo" src="assets/vitri-outdoor.png" alt="VITRI Gasteiz Outdoor Eskola">
+    <div class="footer-links">
+      <a href="#noticias">Noticias</a>
+      <a href="#club">Club</a>
+      <a href="#eskola">Outdoor Eskola</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#contacto">Contacto</a>
+    </div>
   </div>
-  <div class="footer-sponsors">
-    <span>Leire Plazaola</span><span>ViBike</span><span>OPEBASK</span><span>Ecoisola</span><span>Eskuekin</span>
+
+  <div class="footer-sponsors" aria-label="Patrocinadores">
+    <img src="assets/patrocinadores/leire-plazaola.jpg" alt="Leire Plazaola Nutrición">
+    <img src="assets/patrocinadores/vibike.jpg" alt="ViBike">
+    <img src="assets/patrocinadores/opebask.jpg" alt="OPEBASK">
+    <img src="assets/patrocinadores/ecoisola.png" alt="Ecoisola">
+    <img src="assets/patrocinadores/eskuekin.png" alt="Eskuekin">
   </div>
-  <p>Vitoria-Gasteiz · Triatlón · Deporte base · Outdoor</p>
+
+  <div class="footer-bottom">
+    <p>VITRI Gasteiz Triatloi Kluba · Vitoria-Gasteiz</p>
+    <a href="mailto:vitrigasteiz@gmail.com">vitrigasteiz@gmail.com</a>
+  </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
