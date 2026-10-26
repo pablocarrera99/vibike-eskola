@@ -503,3 +503,43 @@ body{overflow-x:hidden}
  .sponsor-collaboration .button{width:100%}
 }
 @media (prefers-reduced-motion:reduce){.sponsor-ribbon-logos a{transition:none}}
+
+/* VITRI - identidad sin recortes, redes y contacto (2026-10-26) */
+.site-header .brand{display:flex;align-items:center;justify-content:center;width:96px;height:76px;flex:0 0 96px;min-width:0;overflow:visible}
+.site-header .brand img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;border-radius:0}
+.hero-logo-wrap{width:min(345px,72%);max-width:345px;aspect-ratio:1;display:grid;place-items:center;padding:15px;background:#fff;border-radius:50%;overflow:hidden}
+.hero-logo-wrap img{width:100%;height:100%;aspect-ratio:auto;object-fit:contain;object-position:center;border-radius:0}
+.footer-social{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:20px 0 25px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-size:12px}
+.footer-social span{font-weight:700;color:#d9cfdc}
+.footer-social a{display:inline-flex;align-items:center;min-height:40px;padding:9px 17px;border:1px solid rgba(255,255,255,.25);border-radius:22px;color:#fff;font-weight:700;transition:background .2s,border-color .2s}
+.footer-social a:hover,.footer-social a:focus-visible{background:var(--purple);border-color:var(--purple)}
+.contact-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(250px,.75fr);gap:28px;align-items:start}
+.contact-form-panel,.contact-details-panel{min-width:0;padding:clamp(24px,4vw,50px);background:#fff;border:1px solid var(--line);border-radius:12px}
+.contact-form-panel{border-top:4px solid var(--orange)}
+.contact-form-panel h2,.contact-details-panel h2{font-size:clamp(38px,4vw,60px);line-height:1.03}
+.contact-form-intro{font-size:15px;color:#63596a;line-height:1.7;margin:14px 0 27px}
+.vitri-contact-form{display:grid;gap:18px}
+.contact-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.contact-field{display:grid;gap:8px;min-width:0}
+.contact-field label{font-size:13px;font-weight:700;color:var(--ink)}
+.contact-field input,.contact-field select,.contact-field textarea{display:block;width:100%;min-width:0;min-height:48px;border:1px solid #d9d1dd;border-radius:8px;background:#fff;color:var(--ink);padding:12px 14px;font:inherit;font-size:15px}
+.contact-field textarea{resize:vertical;min-height:155px;line-height:1.55}
+.contact-field :is(input,select,textarea):focus-visible{outline:3px solid rgba(91,22,142,.2);outline-offset:1px;border-color:var(--purple)}
+.contact-consent{display:flex;gap:11px;align-items:flex-start;font-size:12px;line-height:1.6;color:#544858;cursor:pointer}
+.contact-consent input{flex:0 0 19px;width:19px;height:19px;margin:2px 0 0;accent-color:var(--purple)}
+.contact-submit{border:0;cursor:pointer;justify-self:start;min-height:48px;font-size:12px}
+.contact-privacy{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);color:#63596a;font-size:12px;line-height:1.65}
+.contact-privacy strong{display:block;color:var(--ink);margin-bottom:5px}
+.contact-privacy p{margin:0}
+.form-honeypot{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.contact-details-panel{background:#f3eef5;display:grid;gap:14px}
+.contact-details-panel h2{font-size:40px}
+.contact-details-panel p{margin:0;font-size:14px;line-height:1.7;color:#63596a}
+.contact-details-panel .contact-email{font-size:clamp(21px,2.5vw,29px);overflow-wrap:anywhere}
+.contact-details-panel .contact-location{font-size:12px;font-weight:700;color:var(--purple);margin-bottom:18px}
+.contact-social-links{border-top:1px solid var(--line);padding-top:24px;display:grid;gap:10px}
+.contact-social-links h3{font-size:30px;color:var(--dark)}
+.contact-social-links a{display:block;padding:11px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;color:var(--purple);font-size:12px;font-weight:700;overflow-wrap:anywhere}
+.contact-social-links a:hover{border-color:var(--purple)}
+@media(max-width:900px){.contact-layout{grid-template-columns:1fr}}
+@media(max-width:680px){.site-header .brand{width:74px;height:62px;flex:0 0 74px}.site-header .brand img{width:100%;height:100%;border-radius:0}.hero-logo-wrap{width:190px;max-width:58%;padding:11px}.contact-page-content{padding:30px 6vw 60px}.contact-form-panel,.contact-details-panel{padding:23px}.contact-form-row{grid-template-columns:1fr;gap:18px}.contact-submit{width:100%;justify-self:stretch}.footer-social{gap:9px;font-size:12px}.footer-social a{min-height:44px}}
