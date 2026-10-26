@@ -544,3 +544,38 @@ body{overflow-x:hidden}
 .contact-social-links a:hover{border-color:var(--purple)}
 @media(max-width:900px){.contact-layout{grid-template-columns:1fr}}
 @media(max-width:680px){.site-header .brand{width:74px;height:62px;flex:0 0 74px}.site-header .brand img{width:100%;height:100%;border-radius:0}.hero-logo-wrap{width:190px;max-width:58%;padding:11px}.contact-page-content{padding:30px 6vw 60px}.contact-form-panel,.contact-details-panel{padding:23px}.contact-form-row{grid-template-columns:1fr;gap:18px}.contact-submit{width:100%;justify-self:stretch}.footer-social{gap:9px;font-size:12px}.footer-social a{min-height:44px}}
+
+/* VITRI - acceso directo a redes en cabecera y pie */
+.header-tools{gap:13px}
+.header-social{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+.header-social a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;flex:0 0 40px;border:1px solid #e3d8e9;border-radius:50%;background:#f5eff8;transition:background .2s,border-color .2s,transform .2s}
+.header-social a img{display:block;width:21px;height:21px;object-fit:contain}
+.header-social a:hover{background:#eee0f5;border-color:var(--purple);transform:translateY(-2px)}
+.header-social a:focus-visible,.footer-social a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.footer-social{gap:14px;padding-top:25px}
+.footer-social a{gap:9px;min-height:46px;padding:10px 18px;background:rgba(255,255,255,.1);font-size:13px}
+.footer-social a img{display:block;width:19px;height:19px;object-fit:contain;filter:brightness(0) invert(1)}
+.footer-social a span{color:#fff;font-weight:800}
+@media(max-width:1250px){
+ .desktop-nav{display:none}
+ .mobile-menu{display:block}
+}
+@media(max-width:680px){
+ .header-tools{gap:8px}
+ .header-social{gap:5px}
+ .header-social a{width:38px;height:40px;flex-basis:38px}
+ .header-social a img{width:20px;height:20px}
+ .footer-social a{min-height:46px;padding:10px 15px}
+}
+@media(max-width:370px){
+ .site-header{padding-left:12px;padding-right:12px}
+ .site-header .brand{width:62px;flex-basis:62px}
+ .header-tools{gap:5px}
+ .header-social{gap:3px}
+ .header-social a{width:36px;height:40px;flex-basis:36px}
+ .language-switch{gap:5px;font-size:11px}
+}
+@media(prefers-reduced-motion:reduce){
+ .header-social a{transition:none}
+ .header-social a:hover{transform:none}
+}
